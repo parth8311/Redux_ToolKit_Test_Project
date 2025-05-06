@@ -1,38 +1,115 @@
+/* General body styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #d7e1ec, #f5f7fa);
+  color: #333;
+}
+
+/* Container for the AddUsers component */
 .add-user {
-  height: 200px;
-  padding: 10px;
-  padding-left: 50px;
-  border: 1px solid orange;
+  background: #ffffffcc;
+  padding: 20px 40px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  border-left: 5px solid #ff9800;
 }
 
-.display-user {
-  height: 200px;
-  padding: 10px;
-  margin-top: 10px;
-  padding-left: 50px;
-  border: 1px solid orange;
-  overflow: scroll;
+.add-user h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
+/* Input styling */
 .add-user-input {
-  width: 250px;
-  height: 35px;
-  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
+/* Add user button */
 .add-user-btn {
-  width: 250px;
-  height: 35px;
-  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #ff9800;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
   margin-top: 20px;
+  transition: background-color 0.3s;
 }
 
-.user-item {
-  background-color: skyblue;
+.add-user-btn:hover {
+  background-color: #fb8c00;
+}
+
+/* Link styles */
+.add-user a {
+  display: block;
   margin-top: 10px;
-  padding: 5px;
-  border-radius: 5px;
-  width: 200px;
+  text-decoration: none;
+  color: #1976d2;
+  font-weight: 500;
+}
+
+.add-user a:hover {
+  text-decoration: underline;
+}
+
+/* DisplayUsers container */
+.display-user {
+  background: #ffffffcc;
+  padding: 20px 40px;
+  margin: 20px auto;
+  max-height: 300px;
+  overflow-y: auto;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #4caf50;
+}
+
+.display-user h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Individual user items */
+.user-item {
+  background-color: #e3f2fd;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.user-item:hover {
+  background-color: #bbdefb;
+}
+
+.user-item button {
+  background-color: #ef5350;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.user-item button:hover {
+  background-color: #e53935;
 }

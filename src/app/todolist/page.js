@@ -8,12 +8,12 @@ export default function Page() {
     const todoData = useSelector((data) => data.todosData.todos);
     const dispatch = useDispatch();
     return (
-        <div>
+        <div className="add-user">
             <h3>
                 Add Todo
             </h3>
-            <input type="text" onChange={(e) => setTodo(e.target.value)} placeholder="add new task"/>
-            <button onClick={() => dispatch(addTodos(todo))}>Add Todo</button>
+            <input type="text" className="add-user-input" onChange={(e) => setTodo(e.target.value)} placeholder="add new task"/>
+            <button className="add-user-btn" onClick={() => dispatch(addTodos(todo))}>Add Todo</button>
             <h4>Todo List</h4>
             {
                 todoData.length && todoData.map((item) => {

@@ -12,7 +12,7 @@ export default function Page() {
     },[])
 
     return (
-        <div>
+        <div className="add-user">
             <h1>User List From API</h1>
             {/* <button onClick={() => dispatch(fetchApiUsers())}>Load Users</button> */}
             {
